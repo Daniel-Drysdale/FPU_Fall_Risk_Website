@@ -11,12 +11,15 @@ This project is the visualization of the provided data from our sponsor, LRH. It
 
 ## Basic Requirements:
 
+* Create minimum 4 pages: Login Page, Nurse View Page, Logistics Team View Page, Request page
+* Take in data collected from the data analysis team to display to Nurse and Logistics teams as needed
+* Display data collected and transformed into useful predictive scores to the Logistics team
+* Provide a secure login in for nurse and logistics members (status based on team)
+* Provide a UI/UX experience that both younger and older employees are able to use effectively
 
-## Description of Current Pages:
+## Description of Current Pages (WIP):
 
 
-## How to run and host:
+## How to run and host (WIP):
 
-
-## Dependencies:
 
