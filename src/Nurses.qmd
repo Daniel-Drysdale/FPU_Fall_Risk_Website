@@ -1,0 +1,33 @@
+### Patients
+
+<div class=" justify-content-center">
+
+<table class="table table-striped mt-3" id="patientTable">
+  <thead>
+        <tr>
+            <th class="td-patient">Name</th>
+            <th class="td-patient">Room</th>
+            <th class="td-patient">Risk Score</th>
+            <th class="td-patient">Notes</th>
+            <th class="td-patient">Options </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="td-patient">Jane Smith</td>
+            <td class="td-patient">4401</td>
+            <td class="td-patient">4</td>
+            <td class="td-patient">Patient is current on xyz medication</td>
+            <td class="td-patient">
+                <a
+  class="btn btn-primary rnd-corners"
+  style="background-color: green; color: white;"
+  href="/Request.html">
+  Request Device
+</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>

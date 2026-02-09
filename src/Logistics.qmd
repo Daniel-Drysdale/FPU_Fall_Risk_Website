@@ -1,0 +1,46 @@
+<a style = "float:right" class="btn btn-primary mb-5" href="">Go to Device Management</a>
+
+### Patients
+
+
+<table class="table table-striped mt-3" id="patientTable" style="margin-left:-150px;">
+  <thead>
+        <tr>
+            <th class="td-patient">Name</th>
+            <th class="td-patient">Room</th>
+            <th class="td-patient">Risk Score</th>
+            <th class="td-patient">Notes</th>
+            <th class="td-patient-options">Options </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="td-patient">Jane Smith</td>
+            <td class="td-patient">4401</td>
+            <td class="td-patient">4</td>
+            <td class="td-patient">Patient is current on xyz medication</td>
+            <td class="td-patient">
+                <button
+                    class="col btn btn-sm rnd-corners"
+                    style="background-color: RoyalBlue; color: white;"
+                    href="/Request.html">
+                 Allocate Device
+                </button>
+                <button
+                    class="col btn btn-sm rnd-corners"
+                    style="background-color: MediumSeaGreen; color: white;"
+                    href="/Request.html">
+                 Waitlist Patient
+                </button>
+                <button
+                    class=" btn btn-sm rnd-corners"
+                    style="background-color: Crimson; color: white;"
+                    href="/Request.html">
+                 Remove Device
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</div>

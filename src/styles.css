@@ -1,1 +1,18 @@
 /* css styles */
+
+.rnd-corners{
+    border-radius: 15px; 
+
+}
+
+.td-patient{
+    min-width: 180px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.td-patient-options{
+    min-width: 350px;
+    max-width: 800px;
+    text-align: center;
+}

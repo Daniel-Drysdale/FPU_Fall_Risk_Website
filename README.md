@@ -19,6 +19,20 @@ This project is the visualization of the provided data from our sponsor, LRH. It
 
 ## Description of Current Pages (WIP):
 
+### Nurses:
+
+Nurses will have access to a table of:
+* Patient Rooms
+* Name
+* Fall Risk Score
+* Notes about Patient
+
+As well, they will have access to a request page linked onto the Nurse webpage via a button or other such means. 
+
+### Logistics:
+
+The logistics web-page is for the logistics team, in short, they will have access to everything Nurses do, but can manage devices.
+
 
 ## How to run and host (WIP):
 

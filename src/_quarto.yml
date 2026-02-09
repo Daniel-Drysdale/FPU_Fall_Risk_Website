@@ -5,9 +5,10 @@ website:
   title: "Fall Risk Website"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - href: Logistics.qmd
+        text: Logistics
+      - href: Nurses.qmd
+        text: Nurses
 
 format:
   html:
