@@ -4,11 +4,12 @@
 
 
 <form>
-<div class="mb-3" style = "max-width : 200px;">
+<div class="mb-3 row" style = "max-width : 200px;">
+<div>
 <label for="name" class="form-label">Name</label>
-<input type="name" class="form-control" id="name" placeholder="Jane Smith">
+<input type="name" class="form-control co" id="name" placeholder="Firstname Lastname...">
 
-<label for="name" class="form-label">Name</label>
-<input type="name" class="form-control" id="name" placeholder="Jane Smith">
+<label for="name" class="form-label">Room</label>
+<input type="name" class="form-control" id="name" placeholder="4-digit Room Number...">
 </div>
 </form>

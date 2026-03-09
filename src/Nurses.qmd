@@ -2,6 +2,7 @@
 
 <div class=" justify-content-center">
 
+
 <table class="table table-striped mt-3" id="patientTable">
   <thead>
         <tr>
@@ -16,15 +17,43 @@
         <tr>
             <td class="td-patient">Jane Smith</td>
             <td class="td-patient">4401</td>
-            <td class="td-patient">4</td>
-            <td class="td-patient">Patient is current on xyz medication</td>
+            <td class="td-patient">High (5)</td>
+            <td class="td-patient">Currently on XYZ medication, high Schmidt Score</td>
             <td class="td-patient">
                 <a
-  class="btn btn-primary rnd-corners"
-  style="background-color: green; color: white;"
-  href="/Request.html">
-  Request Device
-</a>
+                    class="btn btn-primary rnd-corners"
+                    style="background-color: MediumSeaGreen; color: white;"
+                    href="/Request.html">
+                 Request Device
+                </a>
+            </td>
+        </tr>
+         <tr>
+             <td class="td-patient">John Doe</td>
+            <td class="td-patient">3053</td>
+            <td class="td-patient">Medium (3)</td>
+            <td class="td-patient">Can become Highly Agitated, Sun-Downer</td>
+            <td class="td-patient">
+                <a
+                    class="btn btn-primary rnd-corners"
+                    style="background-color: MediumSeaGreen; color: white;"
+                    href="/Request.html">
+                 Request Device
+                </a>
+            </td>
+        </tr>
+         <tr>
+            <td class="td-patient">Luke Johnson</td>
+            <td class="td-patient">2033</td>
+            <td class="td-patient">Low (1)</td>
+            <td class="td-patient">Occasional episodes, low schmidt score</td>
+            <td class="td-patient">
+                <a
+                    class="btn btn-primary rnd-corners"
+                    style="background-color: MediumSeaGreen; color: white;"
+                    href="/Request.html">
+                 Request Device
+                </a>
             </td>
         </tr>
     </tbody>

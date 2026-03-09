@@ -1,0 +1,110 @@
+---
+format:
+  dashboard:
+    orientation: rows
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+fall_data <- data.frame(
+  patient_id = 1:13,
+  age = c(19, 81, 56, 68, 38, 72, 85, 23, 66, 48, 74, 83, 70),
+  schmidt_score = c(1, 2, 3, 4, 1, 3, 2, 4, 4, 1, 4, 2, 1),
+  prior_falls = c(0, 2, 1, 0, 3, 1, 2, 1, 0, 4, 1, 2, 0),
+  risk_level = c("Low", "Low", "Medium", "High", "Low", "Medium", "Low", "High", "High", "Low", "High", "Medium", "Low")
+)
+```
+
+## Row
+
+```{r}
+#| title: "Distribution of Schmidt Scores"
+ggplot(fall_data, aes(x = factor(schmidt_score), fill = factor(schmidt_score))) +
+  geom_bar(color = "black") +
+  scale_fill_manual(values = c(
+    "1" = "#78ff8dff",
+    "2" = "#e7ff5fff",
+    "3" = "#ffd15cff",
+    "4" = "#ff7878ff"
+  )) +
+  labs(
+    x = "Schmidt Score",
+    y = "Number of Patients",
+    fill = "Schmidt Score"
+  ) +
+  theme_minimal()
+```
+
+
+```{r}
+#| title: "Risk Level Distribution"
+ggplot(
+  fall_data,
+  aes(
+    x = factor(risk_level, levels = c("Low", "Medium", "High")),
+    fill = factor(risk_level, levels = c("Low", "Medium", "High"))
+  )
+) +
+  geom_bar(color = "black") +
+  labs(
+    x = "Risk Level",
+    y = "Patients",
+    fill = "Risk Level"
+  ) +
+    scale_fill_manual(values = c(
+    "Low" = "#78ff8dff",
+    "Medium" = "#e7ff5fff",
+    "High" = "#ff7878ff"
+  )
+  )+
+  theme_minimal()
+```
+
+
+## Row {"height:10%"}
+```{r}
+#| title: "Patients With Avasure Device - Prior Falls Distribution"
+#| fig-height: 4
+
+prior_fall_counts <- fall_data %>%
+  count(prior_falls) %>%
+  mutate(percent = n / sum(n))
+
+ggplot(
+  prior_fall_counts,
+  aes(
+    x = "",
+    y = n,
+    fill = factor(prior_falls)
+  )
+) +
+  geom_col(color = "black") +
+  coord_polar(theta = "y") +
+  geom_text(
+    aes(label = paste0(n, "\n", scales::percent(percent))),
+    position = position_stack(vjust = 0.5),
+    color = "black",
+    size = 3
+  ) +
+  scale_fill_manual(values = c(
+    "0" = "#78ff8dff",
+    "1" = "#e7ff5fff",
+    "2" = "#ffd15cff",
+    "3" = "#ff7878ff",
+    "4" = "#a335b1b6"
+  )) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "Patients with Count of Prior Falls"
+  ) +
+  theme_void()
+
+```

@@ -1,9 +1,10 @@
-<a style = "float:right" class="btn btn-primary mb-5" href="">Go to Device Management</a>
+<a style = "float:right; margin-right: -100px; margin-bottom: 100px; margin-top:-25px;" class="btn btn-primary mb-5 rnd-corners" href="">Go to Device Management</a>
 
-### Patients
-
-
-<table class="table table-striped mt-3" id="patientTable" style="margin-left:-150px;">
+<div class="center-div">
+# Patients with Device Requested
+</div>
+<br>
+<table class="table table-striped mt-1" id="patientTable" style="margin-left:-120px;">
   <thead>
         <tr>
             <th class="td-patient">Name</th>
@@ -15,10 +16,10 @@
     </thead>
     <tbody>
         <tr>
-            <td class="td-patient">Jane Smith</td>
+            <td class="td-patient" style ="margin-top:10px;">Jane Smith</td>
             <td class="td-patient">4401</td>
-            <td class="td-patient">4</td>
-            <td class="td-patient">Patient is current on xyz medication</td>
+            <td class="td-patient">High (5)</td>
+            <td class="td-patient">C on XYZ medication, high Schmidt Score</td>
             <td class="td-patient">
                 <button
                     class="col btn btn-sm rnd-corners"
@@ -34,7 +35,58 @@
                 </button>
                 <button
                     class=" btn btn-sm rnd-corners"
-                    style="background-color: Crimson; color: white;"
+                    style="background-color: Crimson; color: white; margin-top:5px"
+                    href="/Request.html">
+                 Remove Device
+                </button>
+            </td>
+             <tr>
+            <td class="td-patient">John Doe</td>
+            <td class="td-patient">3053</td>
+            <td class="td-patient">Medium (3)</td>
+            <td class="td-patient">Can become Highly Agitated, Sun-Downer</td>
+            <td class="td-patient">
+                <button
+                    class="col btn btn-sm rnd-corners"
+                    style="background-color: RoyalBlue; color: white;"
+                    href="/Request.html">
+                 Allocate Device
+                </button>
+                <button
+                    class="col btn btn-sm rnd-corners"
+                    style="background-color: MediumSeaGreen; color: white;"
+                    href="/Request.html">
+                 Waitlist Patient
+                </button>
+                <button
+                    class=" btn btn-sm rnd-corners"
+                    style="background-color: Crimson; color: white; margin-top:5px"
+                    href="/Request.html">
+                 Remove Device
+                </button>
+            </td>
+        </tr>
+         <tr>
+            <td class="td-patient">Luke Johnson</td>
+            <td class="td-patient">2033</td>
+            <td class="td-patient">Low (1)</td>
+            <td class="td-patient">Occasional episodes, low schmidt score</td>
+            <td class="td-patient">
+                <button
+                    class="col btn btn-sm rnd-corners"
+                    style="background-color: RoyalBlue; color: white;"
+                    href="/Request.html">
+                 Allocate Device
+                </button>
+                <button
+                    class="col btn btn-sm rnd-corners"
+                    style="background-color: MediumSeaGreen; color: white;"
+                    href="/Request.html">
+                 Waitlist Patient
+                </button>
+                <button
+                    class=" btn btn-sm rnd-corners"
+                    style="background-color: Crimson; color: white; margin-top:5px"
                     href="/Request.html">
                  Remove Device
                 </button>
@@ -44,3 +96,4 @@
 </table>
 
 </div>
+</br>

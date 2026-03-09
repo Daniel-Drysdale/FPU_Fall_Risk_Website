@@ -5,10 +5,13 @@ website:
   title: "Fall Risk Website"
   navbar:
     left:
+      - href: Dashboard.qmd
+        text: Dashboard
       - href: Logistics.qmd
         text: Logistics
       - href: Nurses.qmd
         text: Nurses
+
 
 format:
   html:
@@ -16,7 +19,7 @@ format:
       - cosmo
       - brand
     css: styles.css
-    toc: true
+    
 
 
 
